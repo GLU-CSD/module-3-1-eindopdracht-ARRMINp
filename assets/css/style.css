@@ -74,12 +74,8 @@ html, body {
   }
 }
 
-header {
-  background: grey;
-  padding: 10px;
-}
-.bovenbalk{
-  background-color: orange;
+
+.bovenbalk {
   display:flex;
   justify-content: space-between;
 }
@@ -89,15 +85,6 @@ header {
 .bovenbalk .menuLeft{
   padding: 10px;
 }
-
-
-.onderbalk{
-  background-color: pink;
-  
-}
-
-
-
 
 
 main {
@@ -117,3 +104,51 @@ footer {
   width: 100%;
   background: blue;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #555;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;  
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #444;
+}
+
+.active {
+  background-color: #FF6347;
+}
+
+.onderbalk {
+  opacity: 0,5;
+  border: 2px solid black;
+  margin-top: -2px;
+}
+
+.bovenbalk {
+  opacity: 0,5;
+  border: 2px solid black;
+}
+
+.topnav {
+  display: flex;
+  margin-left: 340px;
+  padding: 6px;
+}
+
+
+
