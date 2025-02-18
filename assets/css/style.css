@@ -46,7 +46,7 @@ html, body {
 .onderrechts{
   display: flex;
   flex-direction: column;
-  background: green;
+  background: white;
   justify-content: center;
   align-items: center;
 }
@@ -55,7 +55,7 @@ html, body {
   width: 100%;
   border: 2px solid black;
   box-sizing: border-box;
-  background: green;
+  background: white;
 }
 
 #content {
@@ -97,8 +97,10 @@ footer {
   background: red;
 }
 #sidebar {
-  width: 200px;
-  background: green;
+  width: 275px;
+  background: white;
+  border: 1px solid black;
+  margin-top: -1px;
 }
 #products {
   width: 100%;
@@ -107,10 +109,8 @@ footer {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
   overflow: hidden;
-  background-color: #555;
 }
 
 li {
@@ -119,8 +119,8 @@ li {
 
 li a {
   display: block;
-  color: white;
-  padding: 14px 16px;
+  color: black;
+  padding: 8px 10px;
   text-align: center;  
   text-decoration: none;
 }
@@ -133,15 +133,26 @@ li a:hover:not(.active) {
   background-color: #FF6347;
 }
 
+
 .onderbalk {
   opacity: 0,5;
-  border: 2px solid black;
-  margin-top: -2px;
+  border: 1px solid black;
+  margin-top: -1px;
+  height: 70px;
+}
+
+.logo {
+  margin-top: -10px;
+}
+
+#logoplek {
+  width: 150px;
+  height: 100px;
 }
 
 .bovenbalk {
   opacity: 0,5;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .topnav {
@@ -149,6 +160,45 @@ li a:hover:not(.active) {
   margin-left: 340px;
   padding: 6px;
 }
+
+.subcator {
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+  width: 140px;
+  margin-left: 30px;
+}
+
+.selectie_vervijnen {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 140px;
+  margin-left: 30px;
+}
+
+#selectie {
+  font-size: 14px;
+}
+
+#de_selectie_mogelijkheden {
+  font-size: 12px;
+}
+
+.subcator, .selectie_vervijnen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subcator p, .selectie_vervijnen p {
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
 
 
 

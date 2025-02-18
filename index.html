@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title></title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="main.js"></script>
   <meta name="description" content="" />
 
   <meta property="og:title" content="" />
@@ -23,8 +24,6 @@
 
 <body>
   <div id="content">
-
-
     <header>
       <div class="bovenbalk">
         <div style="display:flex; margin-left:50px;">
@@ -45,8 +44,10 @@
         </div>
       </div>
 
-      <div class="onderbalk">
+      <div class="onderbalk" style="display: flex;">
         <div class="logo">
+          <img id="logoplek" src="eneba.png">
+        </div>
           <div style="display: flex; margin-left:250px;">
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -55,33 +56,41 @@
               <li><a href="contact.php">Contact</a></li>
             </ul>
             <div class="topnav">
-              <input type="text" placeholder="zoeken">
-              <button>Send</button>
+              <input id="searchbar" type="text" placeholder="zoeken">
+              <button id="searchbarsend">send</button>
             </div>
           </div>
         </div>
-      </div>
+
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <main>
-      <div id="sidebar">sidebar</div>
+      <div id="sidebar">
+        <div class="subcator">
+          <div id="center_top">Games</div>
+          <div id="center_lijn">-------------------------</div>
+          <div id="gamescator">
+            <p><a href="">> GTA</a></p>
+            <p><a href="">> Call of Duty</a></p>
+            <p><a href="">> Fifa</a></p>
+            <p><a href="">> game</a></p>
+            <p><a href="">> game</a></p>
+            <p><a href="">> game</a></p>
+            <p><a href="">> game</a></p>
+          </div>
+        </div>
+        <div class="selectie_vervijnen">
+          <div id="selectie">uw selectie vervijnen</div>
+          <div id="selectie_lijn">---------------------------</div>
+          <div id="de_selectie_mogelijkheden">
+            <p><a href="">> Ingame currency</a></p>
+            <p><a href="">> Games</a></p>
+            <p><a href="">> Playstation 5 Keys</a></p>
+            <p><a href="">> Playstation 4 Keys</a></p>
+            <p><a href="">> Xbox Keys</a></p>
+          </div>
+        </div>
+      </div>
+
       <div id="products">
         <div class="product">
           <img src="assets/img/bo6.jpg" alt="product" />
