@@ -1,204 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+DE+VA+Guides&display=swap');
-
-
-* {
-  padding: 0;
+/* Algemene stijlen */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
-html, body {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-#products {
-  display:flex;
-  flex-wrap: wrap;
-
-}
-.product {
-  width: 180px;
-  background-color: grey;
-  border-radius: 20px;
-  margin:6px;
-  padding:10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.onder{
-  display: flex;
-  flex-direction: row;
-}
-
-.onderlinks{
-  display: flex;
-  flex-direction: column;
-  background: yellow;
-  width: 100%;
-  height: 100px;
-  justify-content:space-between;
-  align-items: left;
-}
-.onderrechts{
-  display: flex;
-  flex-direction: column;
-  background: white;
-  justify-content: center;
-  align-items: center;
-}
-
-.product img{
-  width: 100%;
-  border: 2px solid black;
-  box-sizing: border-box;
-  background: white;
-}
-
-#content {
-  width: 1200px;
-}
-
-@media only screen and (max-width: 840px) {
-  body {
-    background-color: lightblue;
-  }
-  #content {
-    width: 600px;
-  }
-  #sidebar {
-    display: none;
-  }
-}
-
-
+/* Bovenbalk */
 .bovenbalk {
-  display:flex;
-  justify-content: space-between;
-}
-.bovenbalk .menuRight{
-  padding: 10px;
-}
-.bovenbalk .menuLeft{
-  padding: 10px;
-}
-
-
-main {
-  background: yellow;
   display: flex;
-  flex-direction: row;
-}
-footer {
-  height: 100px;
-  background: red;
-}
-#sidebar {
-  width: 275px;
-  background: white;
-  border: 1px solid black;
-  margin-top: -1px;
-}
-#products {
-  width: 100%;
-  background: blue;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10px 50px;
 }
 
+.menuLeft,
+.menuRight {
+  margin: 0 5px;
+}
+
+.menuLeft a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Onderbalk */
+.onderbalk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #ddd;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Navigatiebalk */
 ul {
   list-style-type: none;
-  margin: 5px;
-  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 li {
-  float: left;
+  margin: 0 15px;
 }
 
 li a {
-  display: block;
-  color: black;
-  padding: 8px 10px;
-  text-align: center;  
   text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-li a:hover:not(.active) {
-  background-color: #444;
+li a:hover {
+  color: #007bff;
 }
 
-.active {
-  background-color: #FF6347;
-}
-
-
-.onderbalk {
-  opacity: 0,5;
-  border: 1px solid black;
-  margin-top: -1px;
-  height: 70px;
-}
-
-.logo {
-  margin-top: -10px;
-}
-
-#logoplek {
-  width: 150px;
-  height: 100px;
-}
-
-.bovenbalk {
-  opacity: 0,5;
-  border: 1px solid black;
-}
-
+/* Zoekbalk */
 .topnav {
   display: flex;
-  margin-left: 340px;
-  padding: 6px;
-}
-
-.subcator {
-  border: 1px solid black;
-  margin-top: 10px;
-  padding: 10px;
-  width: 140px;
-  margin-left: 30px;
-}
-
-.selectie_vervijnen {
-  border: 1px solid black;
-  margin: 10px;
-  padding: 10px;
-  width: 140px;
-  margin-left: 30px;
-}
-
-#selectie {
-  font-size: 14px;
-}
-
-#de_selectie_mogelijkheden {
-  font-size: 12px;
-}
-
-.subcator, .selectie_vervijnen {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-top: 10px;
 }
 
-.subcator p, .selectie_vervijnen p {
+#searchbar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchbarsend {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#searchbarsend:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive aanpassingen voor de onderbalk */
+@media only screen and (max-width: 840px) {
+  .onderbalk {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .topnav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #searchbar {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  #searchbarsend {
+    padding: 8px 12px;
+  }
+}
+
+/* Sidebar */
+#sidebar {
+  width: 220px;
+  float: left;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Producten */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product {
+  width: 220px;
   text-align: center;
-  margin: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 
+/* Hover effect */
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
 
+/* Product informatie */
+.onder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
 
+.onderlinks {
+  text-align: left;
+}
 
+.onderrechts button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
+.onderrechts button:hover {
+  background-color: #0056b3;
+}
 
+/* Footer
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  border-top: 2px solid #ddd;
+} */
