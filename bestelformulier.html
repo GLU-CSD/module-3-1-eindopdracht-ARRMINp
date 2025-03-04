@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bestelformulier</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="bovenbalk">
+            <div style="display:flex; margin-left:50px;">
+                <div class="menuRight">Taal:</div>
+                <select class="menuLeft" name="cars" id="cars">
+                    <option value="nederlands">nederlands</option>
+                    <option value="engels">engels</option>
+                    <option value="frans">frans</option>
+                    <option value="duits">duits</option>
+                </select>
+            </div>
+            <div style="display:flex; margin-right:50px;">
+                <div class="menuLeft"><a href="">mijn account</a></div>
+                <div class="menuLeft">|</div>
+                <div class="menuLeft"><a href="bestelformulier.html">afrekenen</a></div>
+                <div class="menuLeft">|</div>
+                <div class="menuLeft"><a href="">uitloggen</a></div>
+            </div>
+        </div>
+
+        <div class="onderbalk" style="display: flex;">
+            <div class="logo">
+                <img id="logoplek" src="eneba.png">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tags.php">Game Keys</a></li>
+                    <li><a href="links.php">Game currency</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+                <div class="topnav">
+                    <input id="searchbar" type="text" placeholder="zoeken">
+                    <button id="searchbarsend">send</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form class="formulier" id="myForm" onsubmit="return validateForm()">
+            <div class="row">
+                <input type="text" placeholder="Voornaam" name="fname" required>
+                <input type="text" placeholder="Tussenvoegsel" name="tussenvoegsel">
+                <input type="text" placeholder="Achternaam" name="lname" required>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Huisnummer" name="huisnummer">
+                <input type="text" placeholder="Postcode" name="postcode">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Straatnaam" name="straat">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Plaats" name="land">
+            </div>
+            <div class="row">
+                <input type="email" placeholder="Emailadres" name="email" required>
+            </div>
+            <div class="row">
+                <input type="number" placeholder="Telefoonnummer" name="telefoon">
+            </div>
+            <div class="row">
+                <input type="date" placeholder="Geboortedatum" name="geboortedatum">
+            </div>
+            <label>
+                <input type="checkbox" name="voorwaarden" required>
+                Ik accepteer de algemene voorwaarden
+            </label>
+            <button type="submit">Verzenden</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="over_ons_main">
+            <p id="over_ons_header">OVER ONS</p>
+            <p>-Over ons-</p>
+            <p>-privacy beleid-</p>
+            <p>-Algemene voorwaarden-</p>
+            <p>-Contactinformatie-</p>
+        </div>
+        <div class="klantenservice">
+            <p id="klantenservice_main">KLANTENSERVICE</p>
+            <p>-Wachtwoord Vergeten-</p>
+            <p>-Veilig Betalen-</p>
+            <p>-Levering-</p>
+            <p>-Annuleren, Retouneren & ruilen-</p>
+        </div>
+        <div class="veilig_betalen">
+            <p id="veilig_betalen_main">VEILIG BETALEN</p>
+            <p id="ideal">Ideal</p>
+            <p id="paypal">PayPal</p>
+            <p id="tikkie">tikkie</p>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

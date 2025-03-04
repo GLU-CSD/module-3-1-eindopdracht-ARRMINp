@@ -213,18 +213,11 @@ li a:hover {
   padding: 20px;
 }
 
-footer {
-  background-color: grey;
-  height: 220px;
-  margin-top: 20px;
-  box-shadow: 2px 2px  rgba(0, 0, 0, 0.1);
-}
+
 
 footer {
-  background-color: grey;
   height: 220px;
-  margin-top: 20px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 .over_ons_main {
@@ -250,6 +243,7 @@ footer {
 
 #veilig_betalen_main {
   margin-top: 0px;
+  
 }
 
 #over_ons_header, #klantenservice_main, #veilig_betalen_main {
@@ -261,3 +255,45 @@ footer {
   display: inline;
   padding: 5px;
 }
+
+
+
+.formulier {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: auto;
+  margin-top: 20px;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+input, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+
