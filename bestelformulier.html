@@ -38,7 +38,9 @@
 
         <div class="onderbalk" style="display: flex;">
             <div class="logo">
-                <img id="logoplek" src="eneba.png">
+                <a href="index.html">
+                    <img id="logoplek" src="eneba.png">
+                </a>
             </div>
             <div>
                 <ul>
@@ -58,6 +60,14 @@
     <main>
         <form class="formulier" id="myForm" onsubmit="return validateForm()">
             <div class="row">
+                <input type="checkbox" name="voorwaarden">
+                Dhr
+                <input type="checkbox" name="voorwaarden">
+                Mvr
+                <input type="checkbox" name="voorwaarden">
+                Anders
+            </div>
+            <div class="row">
                 <input type="text" placeholder="Voornaam" name="fname" required>
                 <input type="text" placeholder="Tussenvoegsel" name="tussenvoegsel">
                 <input type="text" placeholder="Achternaam" name="lname" required>
@@ -67,19 +77,19 @@
                 <input type="text" placeholder="Postcode" name="postcode">
             </div>
             <div class="row">
-                <input type="text" placeholder="Straatnaam" name="straat">
+                <input type="text" placeholder="Straatnaam" name="straat" required>
             </div>
             <div class="row">
-                <input type="text" placeholder="Plaats" name="land">
+                <input type="text" placeholder="Plaats" name="land" required>
             </div>
             <div class="row">
                 <input type="email" placeholder="Emailadres" name="email" required>
             </div>
             <div class="row">
-                <input type="number" placeholder="Telefoonnummer" name="telefoon">
+                <input type="number" placeholder="Telefoonnummer" name="telefoon" required>
             </div>
             <div class="row">
-                <input type="date" placeholder="Geboortedatum" name="geboortedatum">
+                <input type="date" placeholder="Geboortedatum" name="geboortedatum" required>
             </div>
             <label>
                 <input type="checkbox" name="voorwaarden" required>
@@ -110,6 +120,9 @@
             <p id="paypal">PayPal</p>
             <p id="tikkie">tikkie</p>
         </div>
+        <div class="copy_right">
+            <p>&copy;Made By Armin</p>
+          </div>
     </footer>
 
 
