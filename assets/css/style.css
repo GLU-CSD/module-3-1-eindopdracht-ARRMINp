@@ -1,307 +1,347 @@
-/* Header */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  z-index: 1000;
-}
-
-/* Bovenbalk */
-.bovenbalk {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 50px;
-}
-
-.onderbalk {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  border-bottom: 2px solid #ddd;
-}
-
-body {
-  padding-top: 120px;
-}
-
-
-.menuLeft,
-.menuRight {
-  margin: 0 5px;
-}
-
-.menuLeft a {
-  text-decoration: none;
-  color: black;
-}
-
-/* Logo */
-.logo img {
-  height: 80px;
-  margin-top: -20px;
-}
-
-/* Navigatiebalk */
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-li {
-  margin: 0 15px;
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-li a:hover {
-  color: #007bff;
-}
-
-/* Zoekbalk */
-.topnav {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-#searchbar {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#searchbarsend {
-  padding: 8px 12px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-#searchbarsend:hover {
-  background-color: #0056b3;
-}
-
-/* Responsive aanpassingen voor de onderbalk */
-@media only screen and (max-width: 840px) {
-  .onderbalk {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
   }
 
-  ul {
-    flex-direction: column;
+  /* Bovenbalk */
+  .bovenbalk {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .onderbalk {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+  }
+
+  body {
+    padding-top: 120px;
+  }
+
+
+  .menuLeft,
+  .menuRight {
+    margin: 0 5px;
+  }
+
+  .menuLeft a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 80px;
+    margin-top: -20px;
+  }
+
+  /* Navigatiebalk */
+  ul {
+    list-style-type: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
+    display: flex;
   }
 
   li {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
+    margin: 0 15px;
   }
 
+  li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  li a:hover {
+    color: #007bff;
+  }
+
+  /* Zoekbalk */
   .topnav {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-top: 10px;
   }
 
   #searchbar {
-    width: 80%;
-    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
 
   #searchbarsend {
     padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
   }
-}
 
-/* Sidebar */
-#sidebar {
-  width: 220px;
-  float: left;
-  padding: 10px;
-  text-align: center;
-  margin-top: -10px;
-}
+  #searchbarsend:hover {
+    background-color: #0056b3;
+  }
 
-/* Producten */
-#products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
+  /* Responsive aanpassingen voor de onderbalk */
+  @media only screen and (max-width: 840px) {
+    .onderbalk {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-.product {
-  width: 220px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-  font-size: 15px;
-}
+    ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 10px 0;
+    }
 
-.product img {
-  width: 100%;
-  height: 65%;
-  border-radius: 5px;
-}
+    li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
 
-/* Hover effect */
-.product:hover {
-  transform: scale(1.03);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
+    .topnav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
 
-/* Product informatie */
-.onder {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
+    #searchbar {
+      width: 80%;
+      max-width: 300px;
+    }
 
-.onderlinks {
-  text-align: left;
-}
+    #searchbarsend {
+      padding: 8px 12px;
+    }
+  }
 
-.onderrechts button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
+  /* Sidebar */
+  #sidebar {
+    width: 220px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    margin-top: -10px;
+  }
 
-.onderrechts button:hover {
-  background-color: #0056b3;
-}
+  /* Producten */
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .product {
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 15px;
+  }
+
+  .product img {
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+  }
+
+  /* Hover effect */
+  .product:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Product informatie */
+  .onder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .onderlinks {
+    text-align: left;
+  }
+
+  .onderrechts button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .onderrechts button:hover {
+    background-color: #0056b3;
+  }
 
 
-.selectie_vervijnen {
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 15px;
-}
+  .selectie_vervijnen {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 15px;
+  }
 
-.subcator {
-  background-color: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
+  .subcator {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
 
 
 
-footer {
-  height: 220px;
-  margin-top: 50px;
-}
+  footer {
+    height: 220px;
+    margin-top: 50px;
+  }
 
-.over_ons_main {
-  float: right; 
-  padding: 20px;
-  text-align: center;
-  margin-top: -20px;
-}
+  .over_ons_main {
+    float: right; 
+    padding: 20px;
+    text-align: center;
+    margin-top: -20px;
+  }
 
-.klantenservice {
-  float: left;
-  padding: 20px;
-  text-align: center;
-  margin-top: -20px;
-}
+  .klantenservice {
+    float: left;
+    padding: 20px;
+    text-align: center;
+    margin-top: -20px;
+  }
 
-.veilig_betalen {
-  float: none;
-  padding: 20px;
-  text-align: center;
-  margin-top: -20px;
-}
+  .veilig_betalen {
+    float: none;
+    padding: 20px;
+    text-align: center;
+    margin-top: -20px;
+  }
 
-#veilig_betalen_main {
-  margin-top: 0px;
+  #veilig_betalen_main {
+    margin-top: 0px;
+    
+  }
+
+  #over_ons_header, #klantenservice_main, #veilig_betalen_main {
+    font-size: 25px;
+  }
+
+  #ideal, #paypal, #tikkie {
+    border: 1px solid black;
+    display: inline;
+    padding: 5px;
+  }
+
+
+
+  .formulier {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+
+  input, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  button {
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #45a049;
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .price_slider {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 15px;   
+  }
+
+  #mand {
+    margin-top: -8px;
+    width: 35px;
+    height: 35px;
+  }
+
+
+  #winkelmandItems {
+    margin-top: -30px;
+    margin-left: 32px;
+  }
+
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1000;
+  }
   
-}
-
-#over_ons_header, #klantenservice_main, #veilig_betalen_main {
-  font-size: 25px;
-}
-
-#ideal, #paypal, #tikkie {
-  border: 1px solid black;
-  display: inline;
-  padding: 5px;
-}
-
-
-
-.formulier {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  margin: auto;
-  margin-top: 20px;
-  gap: 10px;
-  padding: 20px;
-  border-radius: 8px;
-  background: #f9f9f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-
-
-input, button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button {
-  background: #4CAF50;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #45a049;
-  transform: scale(1.03);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.price_slider {
-  background-color: #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 15px;   
-}
-
-
+  .popup-content {
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

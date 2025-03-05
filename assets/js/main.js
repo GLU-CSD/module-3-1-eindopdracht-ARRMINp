@@ -26,3 +26,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
           
+        let productCount = 0;
+
+// Check of er een opgeslagen productCount in de localStorage is en laad deze
+if (localStorage.getItem("productCount")) {
+  productCount = parseInt(localStorage.getItem("productCount"));
+} else {
+  localStorage.setItem("productCount", productCount);
+}
+
+// Update de winkelmandteller op de pagina
+document.getElementById("winkelmandItems").innerHTML = productCount;
+
+// Functie om product aan winkelwagen toe te voegen
+function winkelWagenAdd() {
+  productCount++;
+  localStorage.setItem("productCount", productCount);
+  document.getElementById("winkelmandItems").innerHTML = productCount;
+}
+
+
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+  
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+  
+  // Optioneel: Toon de pop-up na 3 seconden automatisch
+  setTimeout(showPopup, 3000);
+  
+
