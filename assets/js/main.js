@@ -45,16 +45,5 @@ function winkelWagenAdd() {
   document.getElementById("winkelmandItems").innerHTML = productCount;
 }
 
-
-function showPopup() {
-    document.getElementById("popup").style.display = "block";
-  }
-  
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-  
-  // Optioneel: Toon de pop-up na 3 seconden automatisch
-  setTimeout(showPopup, 3000);
   
 
